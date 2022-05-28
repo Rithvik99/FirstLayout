@@ -1,0 +1,84 @@
+body{
+	margin: 0;
+	font-family: Arial;
+}
+
+.zone{
+	overflow: hidden;
+	transition: all 0.3s linear;
+	font-size: 2em;
+}
+
+.black{
+	background-color: #333;
+}
+
+
+.zone a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.end{
+	margin-left: auto;
+}
+
+.zone a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.zone a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.nav-bar{
+	display: flex;
+	list-style: none;
+	font-size: 1em;
+	margin: 0;
+}
+
+.zone:hover{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.cover{
+	width: 30rem;
+}
+
+.box {
+	background: #444;
+	padding: 30px;
+	margin: 20px;
+}
+.box > a> img{
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.box:hover{
+	transform: rotate(-7deg);
+}
+
+.grid-wrap{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
